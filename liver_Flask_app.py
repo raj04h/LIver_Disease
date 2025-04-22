@@ -5,7 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the trained model
-with open(r"D:\CS_code\Maga_Projects\Drug_efficiency\ml_liver.pkl", "rb") as model_file:
+with open("ml_liver.pkl", "rb") as model_file:
     model = joblib.load(model_file)
 
 @app.route("/")
